@@ -41,7 +41,9 @@ public class BaseTest {
 			ChromeOptions co = new ChromeOptions();
 			co.addArguments("--no-sandbox");
 			co.addArguments("--disable-dev-shm-usage");
-			co.setBrowserVersion("106.0.5249.61");
+			//co.setBrowserVersion("106");
+			co.add_argument('--profile-directory=Default')
+			co.add_argument('--user-data-dir=~/.config/google-chrome')
 			driver = new ChromeDriver(co);
 
 
