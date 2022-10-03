@@ -11,12 +11,13 @@ import org.testng.Assert;
 import gbuxssCreation.PageObject.CartPage;
 import gbuxssCreation.PageObject.ProductCataloguePage;
 import gbuxssCreation.ReusableTests.BaseTest;
+import gbuxssCreation.ReusableTests.Retry;
 
 public class ErrorValidationTest extends BaseTest{
 
 	//String productName = "zara coat 3";
 
-	@Test(groups= {"errorvalidation"},dataProvider="loginValidationData")
+	@Test(groups= {"errorvalidation"},dataProvider="loginValidationData", retryAnalyzer=Retry.class)
 	public void loginValidation(HashMap<String, String> input) throws IOException {
 
 		//login into the application with invalid credentials
