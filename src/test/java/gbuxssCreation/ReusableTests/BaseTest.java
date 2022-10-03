@@ -42,6 +42,7 @@ public class BaseTest {
 			ChromeOptions co = new ChromeOptions();
 			co.addArguments("--no-sandbox");
 			co.addArguments("--disable-dev-shm-usage");
+			 co.addArguments("--headless");
 
 
 		}else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
