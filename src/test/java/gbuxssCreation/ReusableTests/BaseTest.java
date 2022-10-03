@@ -41,12 +41,7 @@ public class BaseTest {
 			ChromeOptions co = new ChromeOptions();
 			co.addArguments("--no-sandbox");
 			co.addArguments("--disable-dev-shm-usage");
-			
 			co.setBrowserVersion("106.0.5249.61");
-			Map<String, Object> cloudOptions = new HashMap<>();
-			cloudOptions.put("build", myTestBuild);
-			cloudOptions.put("name", myTestName);
-			co.setCapability("cloud:options", cloudOptions);
 			driver = new ChromeDriver(co);
 
 
