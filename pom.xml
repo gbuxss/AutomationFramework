@@ -25,12 +25,7 @@
 	    <artifactId>selenium-java</artifactId>
 	    <version>4.4.0</version>
 	</dependency>
-	  <dependency>
-	  <groupId>org.projectlombok</groupId>
-	  <artifactId>lombok</artifactId>
-	  <version>1.18.22</version>
-	</dependency>
-
+	  
 	
 	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 	<dependency>
@@ -89,8 +84,7 @@
 	            <suiteXmlFile>TestNg Suite/ErrorValidationTests.xml</suiteXmlFile>
 	          </suiteXmlFiles>
 	        </configuration>
-     	 </plugin>
-     	 </plugins>
+     	     	 </plugins>
     </pluginManagement>
   	</build>
   
