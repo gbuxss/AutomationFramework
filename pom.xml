@@ -130,6 +130,7 @@
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
+        
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.0.2</version>
@@ -138,13 +139,16 @@
             <target>1.8</target>
         </configuration>
         </plugin>
+        
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
-		<configuration>
+	<configuration>
             <source>1.8</source>
             <target>1.8</target>
+        </configuration>
         </plugin>
+        
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
