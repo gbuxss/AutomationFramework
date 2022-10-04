@@ -41,6 +41,7 @@ public class BaseTest {
 			ChromeOptions co = new ChromeOptions();
 			co.addArguments("--no-sandbox");
 			co.addArguments("--disable-dev-shm-usage");
+			co.addArguments("headless");
 			//co.setBrowserVersion("106");
 			co.add_argument('--profile-directory=Default')
 			co.add_argument('--user-data-dir=~/.config/google-chrome')
