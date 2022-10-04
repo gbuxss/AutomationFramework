@@ -84,7 +84,8 @@
 	            <suiteXmlFile>TestNg Suite/ErrorValidationTests.xml</suiteXmlFile>
 	          </suiteXmlFiles>
 	        </configuration>
-     	     	 </plugins>
+	      </plugin>
+     	     </plugins>
     </pluginManagement>
   	</build>
   
